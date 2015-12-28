@@ -8,10 +8,20 @@
 	<meta name='description' content='Keith Anderson portfolio'/>
 	<meta name='keywords' content='Keith Anderson, front-end development, ux, ui, html, css, javascript, php, mysql' />
 	<meta name='author' content='Keith Anderson' />
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/simpletextrotator.css" />
 	<link rel="stylesheet" href="css/style.css">
+
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script type='text/javascript' src='js/jquery-ui.min.js'></script>
 	<script type='text/javascript' src='js/textrotator.js'></script>
 	<script type='text/javascript' src='js/main.js'></script>
 
@@ -25,107 +35,200 @@
 		<a href="#st-panel-2">Skills</a>
 
 		<input type="radio" name='nav' id='st-control-3'/>
-		<a href="#st-panel-3">Code</a>
+		<a href="#st-panel-3">Portfolio</a>
 
 		<input type="radio" name='nav' id='st-control-4'/>
-		<a href="#st-panel-4">Design</a>
+		<a href="#st-panel-4">Instructional Design</a>
 
 		<input type="radio" name='nav' id='st-control-5'/>
 		<a href="#st-panel-5">Contact</a>
 
 		<div class="st-scroll">
 			<section class="st-panel home" id="st-panel-1">
-				<div class="st-deco"></div>
-				<h2>Hi. I'm Keith,</h2>
-				<h4 class='intro-text'><span class='rotate'>a web developer,a visual designer, an instructional designer, an entrepreneur</span><br> based in San Francisco.</h4>
-				<p>	<img src='images/keith.png'>
+				<!-- <div class="st-deco"></div> -->
+				<div class="education-background">
+						<a href="#st-panel-4">
+							<div id='teach-circle'>
+							</div>
+						</a>
+						<h3>I'm a 
+						<span class='rotate'>instructional designer, web developer</span></h3>
+				</div>
+				<div class="coding-background">
+						<a href="#st-panel-3">
+							<div id='code-circle'>
+							</div>
+						</a>
+						<h3>who
+						<span class='rotate'>codes. , teaches.</span></h3>
+				</div>
+				
+					<div class="home-text">
+						<h1 class='typing'>Hi. I'm Keith.
+						</h1>
+					</div>
+					<img src="images/keith.png" alt="keith" class='home-keith'>
+
 			</section>
 
-			<section class="st-panel experience" id="st-panel-2">
-				<div class="st-deco" data-icon='H'></div>
-				<h2>Skills</h2>
-				<ul id="tools">
-					<span class='ul-title'>My Tools</span>
-					<li>Adobe CC</li>
-					<li>HTML5</li>
-					<li>CSS3</li>
-					<li>javascript</li>
-					<li>PHP and MySQL</li>
-				</ul>
-				<ul id="services">
-					<span class='ul-title'>My Services</span>
-					<li>Digital Design</li>
-					<li>Instructional Design</li>
-					<li>Interactive Design</li>
-					<li>Front-end</li>
-					<li>Back-end</li>
-				</ul>
+			<section class="st-panel skills" id="st-panel-2">
+				<div class="coding-background">
+					<ul>
+						<h5>Web Development</h5>
+						<li>HTML5
+							<div class="meter"><span style='width:85%'></span></div>
+						</li>
+						<li>CSS3
+							<div class="meter"><span style='width:85%'></span></div>
+						</li>
+						<li>Javascript
+							<div class="meter"><span style='width:75%'></span></div>
+						</li>
+						<li>PHP & MySQL
+							<div class="meter"><span style='width:65%'></span></div>
+						</li>
+						<li>Mobile Development
+							<div class="meter"><span style='width:60%'></span></div>
+						</li>
+					</ul>
+				</div>
+				<div class="education-background">
+					<ul id="services">
+						<h5>Instructional Design</h5>
+						<li>Adobe 
+							<div class="meter"><span style='width:85%'></span></div>
+						</li>
+						<li>CSS3
+							<div class="meter"><span style='width:85%'></span></div>
+						</li>
+						<li>Javascript
+							<div class="meter"><span style='width:75%'></span></div>
+						</li>
+						<li>PHP & MySQL
+							<div class="meter"><span style='width:65%'></span></div>
+						</li>
+						<li>Mobile Development
+							<div class="meter"><span style='width:60%'></span></div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="home-text">
+					<h1>Skills
+					</h1>
+				</div>
+			
 			</section>
 
 
 			<section class="st-panel code" id="st-panel-3">
-				<div class="st-deco" data-icon=';'></div>
-				<h2>Code</h2>
-				<div id="slider">
-					<div id="arrows">
-						<a href="" id="next" class='control_next icon'>:</a>
-						<a href="" id="previous" class='control_prev icon'>9</a>
-					</div>
-					<ul class="slides">
-						<li id='slide1 MainSlide'>
-							<a href="#littledipper">
-								<img src="images/littledipper.png" alt="little dipper">
-								<h5>Little Dipper</h5>
-							</a>
-						</li>
-						<li id='slide2'>
-							<img src="images/scargo.png" alt="scargo cafe">
-							<h5>Scargo Cafe</h5>
-						</li>
-						<li id='slide3'>
-							<img src="images/invite.png" alt="wedding invitation">
-							<h5>Wedding E-Invitation</h5>
-						</li>
-					</ul>
-				</div>  <!-- end of #slider -->
-				<div class="slider_option">
-					  <input type="checkbox" id="checkbox">
-					  <label for="checkbox">Autoplay</label>
-				</div> 
+				<div class="coding-background">
+					<div class='code-slider'>
+						<ul class='slides'>
+							<li id='slide1' class='itemslide-active'>
+									<div class="portfolio-description">
+										<h3>Little Dipper 
+										<span><a href="#">Website</a></span></h3>
+										<p>Little Dipper is a new textile company that specializes in high quality cottom fabrics for quilters and sewers. This website is built on top of a Shopify custom theme and includes a funding tracker app, which I build to work specifically on this site.</p>
+										
+										<p class='tags'>
+											<span class="tag">Shopify Theme Development</span>
+											<span class="tag">jQuery</span>
+											<span class="tag">HTML5/CSS</span>
+											<span class="tag">PHP/MySQL</span>
+											<span class="tag">Responsive Layout</span>
+										</p>
+									</div>
+									<img src="images/littledipper.png" alt="little dipper">
+							</li>
+							<li id='slide2'>
+								<div class="portfolio-description">
+								
+									<h3>Scargo Cafe
+										<span><a href="www.nerdyowl.co/scargo">Website</a> | 
+										<a href="https://github.com/keithand/scargo">Github</a></span>
+									</h3>
+									<p>Scargo Cafe is a casual restaurant located in the heart of Cape Cod Massachusetts. This site allows the administrator to easily change the content through the custom-made CMS.</p>
+									
+									<p>
+										<span class="tag">HTML5/CSS</span>
+										<span class="tag">PHP/MySQL</span>
+									</p>
+								</div>
+								<img src="images/scargo.png" alt="scargo cafe">
+							</li>
+							<li id='slide3'>
+								<div class="portfolio-description">
+									<h3>Wedding E-Invitation
+										<span><a href="www.nerdyowl.co/invite">Website</a> | 
+										<a href="https://github.com/keithand/invite">Github</a></span>
+									</h3>
+									<p>This personalized wedding invitation was used for Cate and Rob's wedding in November 2015. This site is a single page application that allows guests to RSVP without refreshing the page. To check it out, use the username <span class='credential'>'dance'</span> and the password <span class='credential'>'likenobodyiswatching'</span>.</p>
+
+									<p>
+										<span class="tag">ajax/javascript</span>
+										<span class="tag">HTML5/CSS</span>
+										<span class="tag">PHP/MySQL</span>
+									</p>
+								</div>
+								<img src="images/invite.png" alt="wedding invitation">
+							</li>
+						</ul>
+					</div> <!-- end of #scrolling code-slider -->
+				</div> <!-- end of coding-background -->
+				<div class="home-text">
+					<h1 class='typing'>Code Examples</h1>
+				</div>
+
 			</section>
 
-			<section class="st-panel design" id="st-panel-4">
-				<div class="st-deco" data-icon='H'></div>
-				<h2>Design</h2>
-				<p>I’m looking to become part of a team of fellow creatives and developers who are equally as passionate to solve problems with design and code. If you think I would be a good addition to your team, check out <a href="www.linkedin.com/keithand/keithand">my LinkedIn page</a> or send me an <a href="ailto:keith.quiche@gmail.com" target="_blank" >email</a>.</p>
+			<section class="st-panel instructional" id="st-panel-4">
+				<div class="education-background">
+					<div class="item-container">
+						<div class="item" id='item1'>
+							<h5>ESL Placement Test Redesign</h5>
+							<img src="images/test-redesign.png">
+						</div>
+						<div class="item">
+							<h5>Passive Voice Instructional Material</h5>
+							<img src="images/passive-voice.png">
+						</div>
+						<div class="item">
+							<h5>Javascript Children's Book </h5>
+							<img src="images/javascript.png">
+						</div>
+					</div>
+				</div><!-- end of education-background -->
 			</section>
 
 			<section class="st-panel content" id="st-panel-5">
-				<div class="st-deco" data-icon='M'></div>
-				<h2>Contact</h2>
 				<p>I’m looking to become part of a team of fellow creatives and developers who are equally as passionate to solve problems with design and code. If you think I would be a good addition to your team, check out <a href="www.linkedin.com/keithand/keithand">my LinkedIn page</a> or send me an <a href="ailto:keith.quiche@gmail.com" target="_blank" >email</a>.</p>
+				<div class="home-text">
+					<h1 class='typing'>Contact</h1>
+				</div>
 			</section>
 
 		</div>
 
 	</div> <!-- closing of st-container -->
 
-	<div class="overlay littledipper" id='littledipper'>
-		<div class="overlay-text">
-			<div class="close icon">Â</div>
-			<h3>Little Dipper</h3>
-			<p>Little Dipper is the kickstarter of fabric. Designs are posted weekly, and if enough customers commit to buy, LD will do a commercial run of the fabric.</p>
-			<p><a href="#">Website</a></p>
-			<p>
-				<span class="tag">Shopify Theme Development</span>
-				<span class="tag">jQuery</span>
-				<span class="tag">HTML5/CSS</span>
-				<span class="tag">Responsive Layout</span>
-			</p>
+	<div class='back-overlay test'>
+		<div class="overlay">
+			<div class="overlay-text">
+				<div class="close icon">Â</div>
+				<h3>ESL Placement Test Redesign</h3>
+				<p>This exam was a redesign of the functionality of the Academy of Art placement test for incoming international students. The purpose of this project was to make the visual hierarchy easy to follow for students not very familiar with English text, and to create universally understood actions when the student interacted with the test.</p>
+
+				<p>
+					<span class="tag">user interation</span>
+					<span class="tag">user interface</span>
+					<span class="tag">visual design</span>
+				</p>
+			</div>
+			<img src="images/placement_test_redesign.jpg" alt="Redesign Test">	
 		</div>
-		<img src="images/littledipper.png" alt="little dipper">
-		
-	</div>
+	</div>	
+
 
 </body>
 </html>
